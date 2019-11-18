@@ -67,7 +67,23 @@ instance.
 
      
 
-5. 
+5. Run the following commands to setup the pre-requisites for your system.
+
+   ```
+   apt update
+   
+   apt-get install wget
+   
+   wget https://raw.githubusercontent.com/IBMDeveloperUK/secure-cloud/master/setupVS.sh
+   
+   chmod u+x setupVS.sh
+   
+   ./setupVS.sh
+   
+   cd secure-cloud/backend/
+   ```
+
+   
 
 
 ## Build and Run the Backend Application
