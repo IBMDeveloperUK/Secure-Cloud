@@ -102,7 +102,7 @@ docker build -t disaster-backend .
 docker run -dp 5000:5000 -e PASSWORD='your_password' -e USERNAME='your_username' -e DBNAME='your_db_name' -e ENDPOINT='primary_hostname:port' -e REPLICASET='replica_set_name' disaster-backend
 ```
 
-
+Note: You will need to make up your own DBNAME. It will be created when the application runs.
 
 You can find the variables needed for the command above by selecting your service from the *Resource List*. 
 
@@ -134,7 +134,3 @@ The application accepts a JSON payload in the form in
 curl -vX POST 'localhost:5000/api/v1/transactions' -d @transaction.json --header "Content-Type: application/json"
 ```
 
-You can confirm this has worked using a Mongo client and checking that
-the DB has been populated. For example, use [Robo
-3T](https://robomongo.org). The name for the database in this pattern
-is `restfulapi`, so look for objects created here.
