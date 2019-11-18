@@ -106,7 +106,7 @@ docker run -dp 5000:5000 -e PASSWORD='your_password' -e USERNAME='your_username'
 
 You can find the variables needed for the command above by selecting your service from the *Resource List*. 
 
-![Select SecureDB.](/Users/jenn/secure-cloud/backend/images/ResourceList.png)
+![Select SecureDB.](images/ResourceList.png)
 
 
 ## Test the Application
