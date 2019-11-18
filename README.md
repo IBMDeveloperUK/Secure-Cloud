@@ -1,6 +1,6 @@
 # Disaster Donations Website
 
-In this code pattern, we will create a disaster donations website
+We will create a disaster donations website
 using a node.js Express app, and a python backend app (exposing a
 RESTful API). The website presents an interface to learn about the
 latest news after a natural disater, and allows the reader to donate
@@ -14,7 +14,7 @@ the site itself. The donations page has AJAX calls into the backend
 application. This backend application is a python app, taking in
 RESTful JSON requests, and translating to MongoDB calls.
 
-When you have completed this code pattern, you will understand how to:
+When you have completed this tutorial, you will understand how to use the following technology in a secured cloud environment:
 
 * Create and run a simple node.js application
 * Install the prerequisites and run a python backend application
@@ -24,16 +24,13 @@ When you have completed this code pattern, you will understand how to:
 
 ## Steps
 
-The frontend and backend applications can both be run locally, or in
-the IBM Cloud in a Linux VM, for example an [IBM Cloud Hyper Protect
-Virtual
-Server](https://cloud.ibm.com/catalog/services/hyper-protect-virtual-server).
+1. Start by creating your IBM Cloud Trial account: [https://console.bluemix.net/registration/trial](https://console.bluemix.net/registration/trial)
 
-Follow the steps in the readme files for the
+We will then work from where the data is stored in the backend database to the frontend application.
 
-- [frontend](./frontend)
-- [backend](./backend)
-- (Optional) [proxy](./proxy)
+2. Follow the steps to setup your database [backend](./backend).
+
+3. Once your database is setup, follow the steps to create your web application [frontend](./frontend).
 
 
 ## Sample output
