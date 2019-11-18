@@ -15,7 +15,7 @@ instance.
 
 1. From the [IBM Cloud Catalog](https://cloud.ibm.com/catalog), search for *Hyper Protect DBaaS* and select **Hyper Protect DBaaS for MongoDB**.
 
-   ![Search for Hyper Protect DBaaS](/Users/jenn/secure-cloud/backend/images/SearchDBaaS.png)
+   ![Search for Hyper Protect DBaaS](images/SearchDBaaS.png)
 
 2. Complete the following fields to start your MongoDB service.
 
@@ -27,9 +27,47 @@ instance.
    * Check: *I agree to the Terms*
    * **Select** *Create*.
 
-   ![Configure your MongoDB instance](/Users/jenn/secure-cloud/backend/images/DBaaSFields.png)
+   ![Configure your MongoDB instance](images/DBaaSFields.png)
 
 3. Carry on to the next section while your database is provisioning.
+
+## Create your virtual server
+
+1. From the [IBM Cloud Catalog](https://cloud.ibm.com/catalog), search for *Hyper Protect Virtual Server* and select **Hyper Protect Virtual Server**.
+
+   ![Search for Hyper Protect Virtual Server.](images/SearchHPVS.png)
+
+2. Complete the following fields to create your virtual server.
+
+   * Select the  **Lite** plan.
+
+   * Enter a *Service name*: DonationsVS
+
+   * Copy and paste in the public half of a SSH key. If you don't one already, please follow the guide [here]( https://cloud.ibm.com/docs/vpc?topic=vpc-ssh-keys).
+
+   * Select **Create**.
+
+     ![Configure your Hyper Protect Virtual Server.](images/HPVSFields.png)
+
+3. Once your virtual server is provisioned, **click** on *DonationsVS* from the Resource list to open up the details page. 
+
+   ![View the details of your virtual server](images/SelectHPVS.png)
+
+   ![View the details of your virtual server.](images/HPVSDetails.png)
+
+4. Open a ssh-capable terminal on your local machine. We will use the terminal to SSH into the virtual server. You will need to obtain the following information:
+
+   * Obtain the IP of the virtual server from the details you opened in the prior step
+
+   * Locate the private key you created earlier on your local machine.
+
+     ```
+     ssh -i your_private_key root@your.public.ip.address
+     ```
+
+     
+
+5. 
 
 
 ## Build and Run the Backend Application
