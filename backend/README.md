@@ -7,10 +7,14 @@ It's a simple python application that takes in transaction data over
 an exposed RESTful API (JSON payload expected), and translates into
 calls to a backend Mongo DB instance.
 
-For a cloud-based Mongo instance to use, try an [IBM Cloud Hyper
+For a cloud-based Mongo instance to use, we will be using a [IBM Cloud Hyper
 Protect DBaaS
 Mongo](https://cloud.ibm.com/catalog/services/hyper-protect-dbaas-for-mongodb)
 instance.
+
+To create your instance perform the following steps:
+
+1. From the [IBM Cloud Catalog](https://cloud.ibm.com/catalog), search for *Hyper Protect DBaaS*.
 
 
 ## Modify the Application Before Running
