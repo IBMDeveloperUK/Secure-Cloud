@@ -24,7 +24,7 @@ When you have completed this tutorial, you will understand how to use the follow
 
 ## Steps
 
-1. Start by creating your IBM Cloud Trial account: [https://console.bluemix.net/registration/trial](https://console.bluemix.net/registration/trial)
+1. Start by creating your IBM Cloud Trial account: [http://ibm.biz/IBMCode-Secure-Cloud](http://ibm.biz/IBMCode-Secure-Cloud)
 
 We will then work from where the data is stored in the backend database to the frontend application.
 
