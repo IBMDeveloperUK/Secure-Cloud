@@ -30,7 +30,7 @@ We will then work from where the data is stored in the backend database to the f
 
 2. Follow the steps to setup your database [backend](./backend).
 3. Once your database is setup, follow the steps to create your web application [frontend](./frontend).
-4. [Clean up](./cleanup) your instances.
+4. [Clean up](./cleanup.md) your instances.
 
 
 ## Sample output
